@@ -2,18 +2,18 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: ["main"]
-
+  
 permissions:
-      contents: "read"
-      pages: "write"
-      id-token: "write"
-with:
-      settings: "publishconf.py"
+  contents: "read"
+  pages: "write"
+  id-token: "write"
 
 jobs:
-  build:
+   build:
     runs-on: ubuntu-latest
     steps:
+      with:
+        settings: "publishconf.py"
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set up Python
@@ -29,6 +29,8 @@ jobs:
       - name: Install requirements
         run: pip install ${{ inputs.requirements }}
       - name: Build Pelican site
+        with:
+          settings: "publishconf.py"
         shell: python
         run: |
           import subprocess
@@ -67,5 +69,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-   
 
