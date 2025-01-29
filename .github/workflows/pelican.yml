@@ -2,7 +2,47 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: ["main"]
-  
+  workflow_call:
+    inputs:
+      settings:
+        required: false
+        default: "publishconf.py"
+        type: string
+      requirements:
+        required: false
+        default: "pelican"
+        description: "The Python requirements to install, for example to enable markdown and typogrify use: 'pelican[markdown] typogrify' or if you have a requirements file use: '-r requirements.txt'"
+        type: string
+      output-path:
+        required: false
+        default: "output/"
+        description: "Where to output the generated files (`pelican`'s `--output` option)"
+        type: string
+      theme:
+        required: false
+        default: ""
+        description: "The GitHub repo URL of a custom theme to use, for example: 'https://github.com/seanh/sidecar.git'"
+        type: string
+      python:
+        required: false
+        default: "3.12"
+        description: "The version of Python to use, for example: '3.12' (to use the most recent version of Python 3.12, this is faster) or '3.12.1' (to use an exact version, slower)"
+        type: string
+      siteurl:
+        required: false
+        default: ""
+        description: "The base URL of your web site (Pelican's SITEURL setting). If not passed this will default to the URL of your GitHub Pages site, which is correct in most cases."
+        type: string
+      feed_domain:
+        required: false
+        default: ""
+        description: "The domain to be prepended to feed URLs (Pelican's FEED_DOMAIN setting). If not passed this will default to the URL of your GitHub Pages site, which is correct in most cases."
+        type: string
+      deploy:
+        required: false
+        default: true
+        description: "Whether to deploy the site. If true then build the site and deploy it. If false then just test that the site builds successfully but don't deploy anything."
+        type: boolean
 permissions:
   contents: "read"
   pages: "write"
@@ -12,8 +52,6 @@ jobs:
    build:
     runs-on: ubuntu-latest
     steps:
-      with:
-        settings: "publishconf.py"
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set up Python
@@ -35,7 +73,7 @@ jobs:
         run: |
           import subprocess
 
-          cmd = "pelican"
+          cmd = "pelican content"
           cmd += " --settings ${{ inputs.settings }}"
           cmd += " --extra-settings"
           cmd += """ SITEURL='"${{ inputs.siteurl || steps.pages.outputs.base_url }}"'"""
