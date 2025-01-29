@@ -67,8 +67,6 @@ jobs:
       - name: Install requirements
         run: pip install ${{ inputs.requirements }}
       - name: Build Pelican site
-        with:
-          settings: "publishconf.py"
         shell: python
         run: |
           import subprocess
