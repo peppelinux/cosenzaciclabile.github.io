@@ -34,7 +34,7 @@ jobs:
           cmd += """ SITEURL='"${{ steps.pages.outputs.base_url }}"'"""
           cmd += """ FEED_DOMAIN='"${{ steps.pages.outputs.base_url }}"'"""
           cmd += " --output output/"
-          cmd += " --theme-path .theme"
+          cmd += " --theme-path themes/fiab"
 
           subprocess.run(cmd, shell=True, check=True)
       - name: Fix permissions
