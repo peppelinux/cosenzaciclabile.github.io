@@ -2,8 +2,8 @@ AUTHOR = 'FIAB Cosenza Ciclabile'
 SITENAME = 'FIAB CosenzaCiclabile'
 SITEURL = ""
 
-#PATH = "content"
-#OUTPUT_PATH = 'output'
+PATH = "content"
+OUTPUT_PATH = 'output'
 
 TIMEZONE = 'Europe/Rome'
 THEME = 'themes/fiab'
