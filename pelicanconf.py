@@ -16,6 +16,17 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight', 'guess_lang':False,},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+        'markdown.extensions.smarty': {},
+        'markdown.extensions.sane_lists': {},
+    },
+    'output_format': 'html5',
+}
+
 # Blogroll
 LINKS = (
     ("Pelican", "https://getpelican.com/"),

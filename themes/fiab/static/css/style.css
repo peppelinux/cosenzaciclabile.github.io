@@ -132,7 +132,7 @@ body {
 }
 /*---------------headings links------------------*/
 p {
-	font-family: 'Arial', sans-serif;
+	font-family: Ubuntu, Arial, Helvetica, 'Nimbus Sans L', sans-serif;;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 400;
@@ -510,7 +510,7 @@ h1.navbar-brand_ a {
 /************** header end **************/
 /************** content **************/
 .box1 {
-	background: #3e454c;
+	background: rgb(255, 230, 27);
 	padding: 53px 57px 43px;
 	position: relative;
 	overflow: hidden;
@@ -525,7 +525,7 @@ h1.navbar-brand_ a {
 	font-size: 50px;
 	line-height: 40px;
 	font-weight: 300;
-	color: #FFF;
+	color: #0069A9;
 	margin-bottom: 14px;
 }
 .title2 {
@@ -908,7 +908,7 @@ h1.navbar-brand_ a {
 	vertical-align: text-top;
 	margin: 0;
 	padding: 0;
-	font-family: 'Arial', sans-serif;
+	font-family: Ubuntu, Arial, Helvetica, 'Nimbus Sans L', sans-serif;;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 400;
@@ -1104,7 +1104,7 @@ h1.navbar-brand_ a {
 	padding: 0;
 	margin: 0;
 	text-decoration: none;
-	font-family: 'Arial', sans-serif;
+	font-family: Ubuntu, Arial, Helvetica, 'Nimbus Sans L', sans-serif;;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 400;
@@ -1114,7 +1114,7 @@ h1.navbar-brand_ a {
 	padding: 0;
 	margin: 0;
 	text-decoration: none;
-	font-family: 'Arial', sans-serif;
+	font-family: Ubuntu, Arial, Helvetica, 'Nimbus Sans L', sans-serif;;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 400;
@@ -1138,7 +1138,7 @@ h1.navbar-brand_ a {
 	padding: 0;
 	margin: -4px 0 0 0;
 	text-decoration: none;
-	font-family: 'Arial', sans-serif;
+	font-family: Ubuntu, Arial, Helvetica, 'Nimbus Sans L', sans-serif;;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 400;
@@ -1230,7 +1230,7 @@ address strong {
 	margin-bottom: 18px;
 }
 address span {
-	font-family: 'Arial', sans-serif;
+	font-family: Ubuntu, Arial, Helvetica, 'Nimbus Sans L', sans-serif;;
 	font-size: 14px;
 	line-height: 23px;
 	font-weight: 400;
@@ -1239,7 +1239,7 @@ address span {
 	margin-bottom: 23px;
 }
 address p {
-	font-family: 'Arial', sans-serif;
+	font-family: Ubuntu, Arial, Helvetica, 'Nimbus Sans L', sans-serif;;
 	font-size: 14px;
 	line-height: 23px;
 	font-weight: 400;
@@ -1291,7 +1291,7 @@ address p em {
 	top: 0;
 	bottom: 0;
 	cursor: text;
-	font-family: 'Arial', sans-serif;
+	font-family: Ubuntu, Arial, Helvetica, 'Nimbus Sans L', sans-serif;;
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 400;
@@ -1301,7 +1301,7 @@ address p em {
 	display: block;
 }
 #contact-form ._placeholder.focused {
-	font-family: 'Arial', sans-serif;
+	font-family: Ubuntu, Arial, Helvetica, 'Nimbus Sans L', sans-serif;;
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 400;
@@ -1322,7 +1322,7 @@ address p em {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	float: left;
-	font-family: 'Arial', sans-serif;
+	font-family: Ubuntu, Arial, Helvetica, 'Nimbus Sans L', sans-serif;;
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 400;
@@ -1341,7 +1341,7 @@ address p em {
 	overflow: hidden;
 }
 .req {
-	font-family: 'Arial', sans-serif;
+	font-family: Ubuntu, Arial, Helvetica, 'Nimbus Sans L', sans-serif;;
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 400;
@@ -1458,7 +1458,7 @@ address p em {
 }
 .form-404 input {
 	outline: none;
-	font-family: 'Arial', sans-serif;
+	font-family: Ubuntu, Arial, Helvetica, 'Nimbus Sans L', sans-serif;;
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 400;

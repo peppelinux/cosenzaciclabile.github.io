@@ -1,0 +1,18 @@
+<!-- Mini Posts -->
+<section>
+    <div class="mini-posts">
+  
+      {% for article in articles[:4] if article.category.name == 'NEWS' %}
+      <!-- Mini Post -->
+      <article class="mini-post">
+        <header>
+          <h3><a href="{{ article.slug }}">{{ article.title }}</a></h3>
+          <time class="published" datetime="{{ article.date | strftime('%Y-%m-%d') }}">{{ article.date | strftime('%b %-d, %Y') }}</time>
+          <a href="#" class="author"><img src="{{ SITEURL }}/theme/images/avatar.jpg" alt="" /></a>
+        </header>
+        <a href="{{ article.slug }}" class="image"><img src="{{ article.image }}" alt="" /></a>
+      </article>
+      {% endfor %}
+  
+    </div>
+  </section>
