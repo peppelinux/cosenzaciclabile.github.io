@@ -25,26 +25,26 @@
                     <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4 collist1">
                         <div class="list1overflow">
                             <figure><img src="{{ SITEURL }}/theme/images/page1_icon1.png" alt=""></figure>
-                            <p class="listtitle1">our bikes<span>Dolore ipsum</span></p>
+                            <p class="listtitle1">Mobilità Urbana<span>Città più ecosostenibili</span></p>
                         </div>
-                        <p class="mbotlist1">Tincidunt dolor nunc vule putate ulr ips dol consec. Donec semp ertet laciniate ultricie upien disse come lectus fgilla. Sollicil tudin dolor necamet quam accumsan.</p>
-                        <a href="#" class="btn btn-primary btn2">more</a>
+                        <p class="mbotlist1">FIAB lavora affinché sia incentivato l’uso della bicicletta come mezzo di trasporto quotidiano, con l’obiettivo di contribuire a ridurre l’inquinamento, mantenersi in salute, liberare lo spazio urbano da destinare alla socialità.</p>
+                        <a href="#" class="btn btn-primary btn2">Scopri di più</a>
                     </li>
                     <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4 collist1">
                         <div class="list1overflow">
                             <figure><img src="{{ SITEURL }}/theme/images/page1_icon2.png" alt=""></figure>
-                            <p class="listtitle1">our riders<span>Dolore ipsum</span></p>
+                            <p class="listtitle1">Ciclo turismo<span>Turismo rispettoso dell'ambiente</span></p>
                         </div>
-                        <p class="mbotlist1">Tincidunt dolor nunc vule putate ulr ips dol consec. Donec semp ertet laciniate ultricie upien disse come lectus fgilla. Sollicil tudin dolor necamet quam accumsan.</p>
-                        <a href="#" class="btn btn-primary btn2">more</a>
+                        <p class="mbotlist1">FIAB sostiene il turismo in bicicletta in alternativa al turismo di massa con mezzi di trasporto invasivi. Il cicloturismo è rispettoso verso il territorio, oltre che una chiave di rilancio per le piccole economie locali.</p>
+                        <a href="#" class="btn btn-primary btn2">Scopri di più</a>
                     </li>
                     <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4 collist1">
                         <div class="list1overflow">
                             <figure><img src="{{ SITEURL }}/theme/images/page1_icon3.png" alt=""></figure>
-                            <p class="listtitle1">our shop<span>Dolore ipsum</span></p>
+                            <p class="listtitle1">Scuola e Bambini<span>Per una nuova mobilità</span></p>
                         </div>
-                        <p class="mbotlist1">Tincidunt dolor nunc vule putate ulr ips dol consec. Donec semp ertet laciniate ultricie upien disse come lectus fgilla. Sollicil tudin dolor necamet quam accumsan.</p>
-                        <a href="#" class="btn btn-primary btn2">more</a>
+                        <p class="mbotlist1">FIAB svolge percorsi formativi sulla mobilità urbana rivolti ai giovani, e attività didattiche nelle scuole, attraverso il “Progetto Scuola” e l’organizzazione di eventi quali il Bicibus e il Bike to School.</p>
+                        <a href="#" class="btn btn-primary btn2">Scopri di più</a>
                     </li>
                 </ul>
             </article>
@@ -55,33 +55,27 @@
         <div class="container"> 
             <div class="row">
                 <article class="col-lg-6 col-md-6 col-sm-6 col-xs-12 welcome">
-                    <p class="title_welcome">welcome<span>to our bicycle club</span></p>
+                    <p class="title_welcome">SOCI FIAB<span>una miriade di vantaggi</span></p>
                     <figure><img src="{{ SITEURL }}/theme/images/page1_img1.jpg" alt=""></figure>
                     <div class="welcome_info">
-                        <h3>Mes cuml dia sed inenias ingerto lot aliiqtes dolore ipsum.</h3>
-                        <p>Nemo enim ipsam voluptatem voluptas sit. Aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui rationevoluptatem nesciunt lacusueni ascet dolingerto otis aliiqt sit amet eism com odictor ut ligulate cotameti dapibu. Nemo enim ipsam voluptatem voluptas sit.</p>
+                        <h3>Alcuni dei servizi per i soci</h3>
+                        <p>Migliaia di gite e decine di viaggi in bicicletta. Copertura RC Bici, la responsabilità civile per ogni danno provocato a terzi che si causa circolando in bicicletta in qualsiasi paese europeo.  BC, una rivista completamente nuova che vuole affrontare una sfida difficile: diffondere la cultura della bicicletta e le pratiche di una mobilità diversa. Sconti e convenzioni presso numerose attività commerciali</p>
                     </div>
                 </article>
                 <article class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <h2>What's New?</h2>
+                    <h2>Ultimi articoli</h2>
                     <div class="row">
                       <ul class="list-whatsnew">
+                        {% for article in articles[:2] if article.category.name == 'NEWS' %}
                         <li class="col-lg-6 col-md-6 col-sm-6 whatsnewcol">
-                         <div class="badge badge_1"><p class="badgetxt">11<span>dec</span></p></div>
-                            <div class="overflow">
-                                <h3><a href="#">Mes cuml dia sed inenias cet</a></h3>
-                                <p>Mes cuml dia sed in lacus ut eniascet ingerto aliiqt es site amet eismod ictor ut ligulate ameti dapibus.</p>
-                                <a href="#" class="btn btn-primary btn3">more</a>
+                            <div class="badge badge_1"><p class="badgetxt">{{article.date|strftime('%d')}}<span>{{article.date|strftime('%b')}}</span></p></div>
+                                <div class="overflow">
+                                    <h3><a href="#">{{ article.title|truncate(30, killwords=False)}}</a></h3>
+                                    <p>{{ article.summary }}</p>
+                                </div>
                             </div>
                         </li>
-                        <li class="col-lg-6 col-md-6 col-sm-6 whatsnewcol">
-                         <div class="badge badge_1"><p class="badgetxt">15<span>dec</span></p></div>
-                            <div class="overflow">
-                                <h3><a href="#">Mes cuml dia sed inenias cet</a></h3>
-                                <p>Mes cuml dia sed in lacus ut eniascet ingerto aliiqt es site amet eismod ictor ut ligulate ameti dapibus.</p>
-                                <a href="#" class="btn btn-primary btn3">more</a>
-                            </div>
-                        </li>
+                        {% endfor %}
                       </ul>
                     </div>
                 </article>
