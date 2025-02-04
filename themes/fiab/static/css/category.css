@@ -1,0 +1,11 @@
+.blogroll {
+    display: flex;
+   
+}
+article {
+    margin-top: 20px;
+}
+.image {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}

@@ -2,14 +2,16 @@
 <section>
     <div class="mini-posts">
   
-      {% for article in articles[:4] if article.category.name == 'NEWS' %}
+      {% for article in articles %}
       <!-- Mini Post -->
-      <article class="mini-post">
+      <article class="mini-post blogroll">
+        <a href="{{ article.slug }}" class="image"><img src="{{ article.image }}" alt="" /></a>
         <header>
           <h3><a href="{{ article.slug }}">{{ article.title }}</a></h3>
           <time class="published" datetime="{{ article.date | strftime('%Y-%m-%d') }}">{{ article.date | strftime('%b %-d, %Y') }}</time>
+          <p>{{ article.summary }}</p>
         </header>
-        <a href="{{ article.slug }}" class="image"><img src="{{ article.image }}" alt="" /></a>
+        
       </article>
       {% endfor %}
   

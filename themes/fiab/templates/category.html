@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/category.css">
+{% endblock css %}
+
+
+{% block content %}
+<section class="article main bgwhite">
+    <div class="container bgwhite">
+        <article class="row">
+  
+            <div class="col-lg-9">
+                {% include 'includes/blog.html' %}
+            </div>
+     
+        </article>   
+    </div>
+    
+</section>
+{% endblock content %}

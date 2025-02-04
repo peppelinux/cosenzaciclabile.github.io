@@ -27,6 +27,12 @@ MARKDOWN = {
     'output_format': 'html5',
 }
 
+CATEGORIES_SAVE_AS = 'blog/index.html'
+CATEGORY_URL = '/{slug}/'
+CATEGORY_SAVE_AS = '/{slug}/index.html'
+
+DELETE_OUTPUT_DIRECTORY = True
+
 # Blogroll
 LINKS = (
     ("Pelican", "https://getpelican.com/"),
