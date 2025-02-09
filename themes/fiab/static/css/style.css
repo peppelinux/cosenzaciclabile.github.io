@@ -300,7 +300,6 @@ h1.navbar-brand_ a {
 	margin-right: 0;
 }
 .tm_navbar {
-
 	padding: 9% 0 0 0;
 	margin: 0;
 	background: none;
@@ -343,8 +342,8 @@ h1.navbar-brand_ a {
 	line-height: 22px;
 	font-weight: 600;
 	background: transparent;
-	padding: 0;
-	margin: 0 21px;
+	padding: 0 21px;
+	margin: 0 0;
 	border: none;
 	border-radius: 0;
 	text-shadow: none;
@@ -353,8 +352,7 @@ h1.navbar-brand_ a {
 }
 .tm_navbar .nav > li > a .indicator1 {
 	background: url(../images/indicator.png) 0 bottom no-repeat;
-	width: 7px;
-	height: 5px;
+
 	display: inline-block;
 	top: 26px;
 	right: 39%;

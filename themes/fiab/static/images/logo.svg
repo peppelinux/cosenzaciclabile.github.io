@@ -24,14 +24,14 @@
      width="313.16px"
      height="168.16px"
      inkscape:zoom="1.3397554"
-     inkscape:cx="335.13581"
-     inkscape:cy="271.31819"
+     inkscape:cx="330.65737"
+     inkscape:cy="271.31818"
      inkscape:window-width="1920"
      inkscape:window-height="990"
      inkscape:window-x="0"
      inkscape:window-y="28"
      inkscape:window-maximized="1"
-     inkscape:current-layer="Livello_1" />
+     inkscape:current-layer="g38" />
   <defs
      id="defs10">
     <style
@@ -91,17 +91,26 @@
       <text
          class="cls-2"
          transform="translate(207.01,207)"
-         id="text16"><tspan
+         id="text16"
+         style="letter-spacing:7.18px"><tspan
+           sodipodi:role="line"
+           id="tspan11513"
            x="0"
            y="0"
-           id="tspan12">Cosenza</tspan><tspan
+           style="letter-spacing:10.75px"><tspan
+             x="0"
+             y="0"
+             id="tspan12"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:10.75px">Cosenza</tspan></tspan><tspan
+           sodipodi:role="line"
+           id="tspan11515"
            x="0"
-           y="32"
-           id="tspan14">Ciclabile</tspan></text>
+           y="30"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:7.97px">Ciclabile</tspan></text>
       <rect
          class="cls-1"
          x="208.45"
-         y="213.38"
+         y="212.63361"
          width="162.67"
          height="2.8299999"
          id="rect18" />
