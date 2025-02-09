@@ -15,6 +15,11 @@ pip install virtualenv
 
 ## Project Setup
 
+This setup should be execute typically for the first time.
+Once the project was built this setup won't be necessary anymore.
+
+### Virtualenv
+
 Use virtualenv and install the dependencies.
 
 ````
@@ -22,6 +27,9 @@ virtualenv env
 source env/bin/activate
 ````
 
+### Dependencies
+
+Install the bumped dependencies
 ````
 pip install -r requirements.txt
 ````
@@ -34,6 +42,8 @@ created and will containg the static website.
 ````
 pelican content
 ````
+
+## Preview the Web Site
 
 To serve the website using the integrated pelican httpd server, you can
 use the following command.
