@@ -92,21 +92,17 @@
          class="cls-2"
          transform="translate(207.01,207)"
          id="text16"
-         style="letter-spacing:7.18px"><tspan
+         style="letter-spacing:0px"><tspan
            sodipodi:role="line"
            id="tspan11513"
            x="0"
            y="0"
-           style="letter-spacing:10.75px"><tspan
-             x="0"
-             y="0"
-             id="tspan12"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:10.75px">Cosenza</tspan></tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:1.08px">Cosenzaciclabile</tspan><tspan
            sodipodi:role="line"
            id="tspan11515"
            x="0"
            y="30"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:7.97px">Ciclabile</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif" /></text>
       <rect
          class="cls-1"
          x="208.45"
